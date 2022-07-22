@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-family: $font;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(175,103,233);
+    background: linear-gradient(180deg, rgba(175,103,233,1) 30%, rgba(101,101,231,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

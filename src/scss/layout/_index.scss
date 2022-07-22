@@ -1,0 +1,125 @@
+@import "../mixins/mediaQuerys";
+
+.general {
+  position: relative;
+}
+.contenedor {
+  background-color: #fff;
+  display: grid;
+  border-radius: 30px;
+  min-width: 60vw;
+  height: fit-content;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.faq {
+  margin: 30px;
+}
+
+.faq-title {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.linea {
+  border-top: 1px solid $Light-grayish-blue;
+  height: auto;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: fit-content;
+  margin-bottom: 20px;
+  font-size: $font-size;
+
+  .title-question {
+    color: $Very-dark-desaturated-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80vh;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      color: $Soft-red;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  span {
+    display: none;
+  }
+
+  .selected {
+    font-weight: 800;
+
+    img {
+      transform: rotate(180deg);
+    }
+
+    span {
+      color: $Dark-grayish-blue;
+      display: flex;
+      margin-bottom: 5px;
+      font-size: $font-size;
+    }
+  }
+
+  .text {
+    color: $Very-dark-grayish-blue;
+  }
+
+  .answer {
+    margin-top: 5px;
+  }
+
+  .arrow-icon {
+    width: 10px;
+    height: 8px;
+  }
+}
+
+//img woman
+
+.img-bg {
+  display: block;
+  margin: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.img-woman {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: -200px;
+  left: -330px;
+  z-index: 1;
+}
+
+.img-cube {
+  width: 200px;
+  position: fixed;
+  top: 310px;
+  left: 170px;
+  z-index: 2;
+}
+
+.img-shade {
+  width: 1000px;
+  position: absolute;
+  top: -580px;
+  left: -835px;
+}
+.img-shade-mobile {
+  display: none;
+}
+
+

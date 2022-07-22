@@ -1,0 +1,77 @@
+//media query
+@include for-phone-only {
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: min-content;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq {
+    margin: 0;
+    margin-top: 110px;
+  }
+
+  .faq-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .question {
+    margin-bottom: 0;
+
+    .title-question {
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  .answer {
+    margin-top: 0;
+  }
+
+  .arrow-icon {
+    margin: 20px;
+  }
+
+  .answer {
+    width: 80%;
+  }
+
+  .img-bg {
+    position: relative;
+    overflow: visible;
+  }
+
+  .img-woman {
+    display: none;
+  }
+
+  .img-woman-mobile {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: -405px;
+    left: 40px;
+    z-index: 1;
+  }
+
+  .img-shade-mobile {
+    display: flex;
+    position: absolute;
+    top: -290px;
+    left: 40px;
+    z-index: 2;
+  }
+
+  .img-shade {
+    display: none;
+  }
+  .img-cube {
+    display: none;
+  }
+}
